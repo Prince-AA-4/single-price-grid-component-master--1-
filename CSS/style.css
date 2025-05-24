@@ -1,0 +1,142 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --LightCyan: hsl(179, 47%, 52%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+    --Fontsize: 16px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--LightGray);
+    font-size: var(--Fontsize);
+    padding: 2rem 1rem;
+    line-height: 1.6em; 
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    font-family: Karla;
+    
+}
+
+.card-container{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    }
+
+button{
+    background-color: var(--BrightYellow);
+    color: var(--LightGray);
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--GrayishBlue);
+}
+
+.card1,.card2,.card3{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    gap: 0.6rem;
+}
+
+.Join{
+    background-color: whitesmoke;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+}
+.Subscription{
+    background-color: var(--Cyan);
+}
+
+.whyUs{
+    background-color: var(--LightCyan);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+.card2,.card3{
+    flex: 1;
+}
+
+.card1 h3{
+    color: var(--Cyan);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card1 h4{
+    color: var(--BrightYellow);
+    font-weight: bold;
+    font-size: 1;
+}
+
+.card1 p{
+    color: var(--GrayishBlue);
+}
+
+
+.card2 h3, .card3 h4{
+    color: whitesmoke;
+}
+
+.card2 p b{
+    color: whitesmoke;
+    font-size:30px;
+    font-weight: bold;
+}
+
+.card2 p, .card3 p{
+    color: var(--LightGray);
+}
+@media (min-width:765px){
+    .card-container{
+        flex-direction: row;
+        width: 600px;
+    }
+
+    .Join{
+        width: 600px;
+        border-top-right-radius:5px;
+        border-top-left-radius:5px;
+    }
+
+    #container{
+        margin-top: 5%;
+        max-width: 600px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .whyUs{
+    background-color: var(--LightCyan);
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:0;
+
+    }
+
+    .Subscription{
+    background-color: var(--Cyan);
+    border-bottom-left-radius:5px;
+
+   }
+
+
+}
